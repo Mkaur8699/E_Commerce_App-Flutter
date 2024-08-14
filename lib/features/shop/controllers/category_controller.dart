@@ -71,3 +71,16 @@ uploadDummyData()async{
 //third comand---> git push
 
 //bs ok...add hogya us me ab project?.hua add haa.. ye sara add kro app
+// yr ye comments bhi add hogye/.....wo ab isi code mein se remove krke......ye sari commands chladu ek bar???..apko itni jldi kyu he..jldi toh nhi...me add krna sikha rha huna ..to remove kis khushi me kroge....ok
+//abhi sirf apki branch me add hue he ye sb ....master me bhi krne he ..kyuki master ek common branch he jisme sbse latest code rhta he ok
+//hua ? ha..smjme bhi aya ki ni nhiii..pucho jo ni ayA
+//pehle jo changes maine kre the wo mk_dev mein kre the..ha
+//uske bad jo aapne kre changes wo master mein kre?....dekho..abhi current konsi he mk wali
+///to ap abhi mk wali me kam kr rhe ho...to jb app ye sb kroge
+///first cmnd--->  git add .
+///second cmnd --> git commit -m "message"
+///third comand---> git push
+///
+/// to jo bhi kam apne kiya hoga vo sara remote pr pdi hui mk_dev me chla jayega okkk...puch lo kuch bhi isme se doubt he to nhi ab thik hai
+/// fir mk_dev me to chle gye ....lekin ab master me merge bhi krned hote he okk..to uske liye pull request create krni pdti he current branch se......kro fir
+/// ki thi na abhi git pr jqke,,,wo dubara bta do ek bar..uske liye changes krne pdene ....dekho
