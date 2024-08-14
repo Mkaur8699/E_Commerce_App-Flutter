@@ -64,3 +64,10 @@ uploadDummyData()async{
 //backup kr liya by chance kuch problem ho jaye took...ab git ka kam
 
 //ab kholeo..kuch ni h vo ..... git push --set-upstream origin mk_dev ....MTLB YHI KI MK_DEV REMOTE PR NHI HE ....USKO REMOTE PR BNAO BY USING THIS COMMAND OK.A
+//ab  git push --set-upstream origin mk_dev  ye nhi likhna pda kyuki remote pr phle se mk_dev pdi hui he isl
+//ab mujhe firse name change krna ye wala....ab jo bhi kam kroge is project me ...to kam krne ke baad ...
+//first cmnd--->  git add .
+//second cmnd --> git commit -m "message"
+//third comand---> git push
+
+//bs ok...add hogya us me ab project?.hua add haa.. ye sara add kro app
