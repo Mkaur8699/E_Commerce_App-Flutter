@@ -63,3 +63,4 @@ uploadDummyData()async{
 }
 //backup kr liya by chance kuch problem ho jaye took...ab git ka kam
 
+//ab kholeo..kuch ni h vo ..... git push --set-upstream origin mk_dev ....MTLB YHI KI MK_DEV REMOTE PR NHI HE ....USKO REMOTE PR BNAO BY USING THIS COMMAND OK.A
