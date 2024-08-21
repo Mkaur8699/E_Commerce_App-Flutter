@@ -114,7 +114,7 @@ class SettingsScreen extends StatelessWidget {
                       subTitle: 'Upload Data to your Cloud Firebase',
                       icon: Iconsax.document_upload, onTap: () {
                         print("upload data btn pressed");
-                        categoryController.uploadDummyData();
+                        categoryController.uploadDummyProductImages();
                   },),
                   TSettingsMenuTile(
                     title: 'Geolocation',
@@ -160,3 +160,9 @@ class SettingsScreen extends StatelessWidget {
     );
   }
 }
+
+
+// meet pr  bhejo...meet phn pr kru join ya laptop....phn pr kokokkkk...whatsap p bhjenaok...bhjo na check
+//sbse phle to app ko close kro krdiya,bg se ...gjb krte ho yrr.
+//products gayab hogye..ab kya kre pta nhi...scroll nhi ho rha kuch...profile pr jao
+//load data...kya ho rha ye...home pr..

@@ -47,3 +47,8 @@ class THomeCategories extends StatelessWidget {
     });
   }
 }
+//chla? 2 min hm chl gya
+//aap toh bl rhe the credit card lgega ab kaise hua//
+//mjak ni kr skte ?kr skte ho..to bs fir ok....yr ab category images same same aa rhi wo firebase se krni pdengi change
+//mujhe btado bs m khud krlungi aur pta bhi chl jayega....fir ye chij to rhne  do abhi kyuki duplicity kha ho rhi he vo dhundhni pdegi ,pareshan ho jaoge or ..last me kr lena ye
+//product images btao fir tb tk
