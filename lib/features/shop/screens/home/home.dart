@@ -1,4 +1,5 @@
 import 'package:e_commerce_app/common/widgets/layouts/grid_layout.dart';
+import 'package:e_commerce_app/features/shop/controllers/category_controller.dart';
 import 'package:e_commerce_app/features/shop/screens/all_products/all_products.dart';
 import 'package:e_commerce_app/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:e_commerce_app/features/shop/screens/home/widgets/home_categories.dart';
@@ -17,6 +18,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller=Get.put(CategoryController());
     return Scaffold(
         body: SingleChildScrollView(
             child: Column(
@@ -74,7 +76,17 @@ class HomeScreen extends StatelessWidget {
               const SizedBox(height: TSizes.spaceBtwItems),
 
               ///Popular Products
-                TGridLayout(itemCount: 6, itemBuilder: (_, index) => const TProductsCardVertical()),
+                Obx(
+                    ()=> TGridLayout(itemCount: controller.products.length, itemBuilder: (_, index) {
+                    if(controller.isLoading.value){
+                      return CircularProgressIndicator();
+                    }else {
+                      return TProductsCardVertical(
+                        product: controller.products[index],);
+                    }
+                  }
+                  ),
+                )
             ],
           ),
         ),

@@ -32,11 +32,12 @@ class WishlistScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: SingleChildScrollView(
-        child: Padding(padding: const EdgeInsets.all(TSizes.defaultSpace),
+      body: const SingleChildScrollView(
+        child: Padding(padding: EdgeInsets.all(TSizes.defaultSpace),
         child: Column(
           children: [
-            TGridLayout(itemCount: 6, itemBuilder: (_, index) => const TProductsCardVertical()),
+            //TODO: we need to create  a seperate list for this ,then we pass on this TProductsCardVertical
+            // TGridLayout(itemCount: 6, itemBuilder: (_, index) => const TProductsCardVertical()),
           ],
         ),
         ),

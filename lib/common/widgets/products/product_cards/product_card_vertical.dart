@@ -3,6 +3,7 @@ import 'package:e_commerce_app/common/widgets/custom_shapes/containers/rounded_c
 import 'package:e_commerce_app/common/widgets/images/rounded_image.dart';
 import 'package:e_commerce_app/common/widgets/texts/product_title_text.dart';
 import 'package:e_commerce_app/features/shop/screens/product_details/product_details.dart';
+import 'package:e_commerce_app/utils/dummy_data/dummy_data.dart';
 import 'package:e_commerce_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -15,7 +16,8 @@ import '../../texts/brand_title_text_with_verified_icon.dart';
 import '../../texts/product_price_text.dart';
 
 class TProductsCardVertical extends StatelessWidget {
-  const TProductsCardVertical({super.key});
+  const TProductsCardVertical({super.key, required this.product});
+ final CategoryModel2 product;
 
   @override
   Widget build(BuildContext context) {
@@ -41,8 +43,9 @@ class TProductsCardVertical extends StatelessWidget {
               child: Stack(
                 children: [
                   ///Thumbnail Image
-                  const TRoundedImage(
-                    imageUrl: TImages.productImage1,
+                   TRoundedImage(
+                    imageUrl: product.imageUrl,
+                    isNetworkImage: true,
                     applyImageRadius: true,
                   ),
 
@@ -78,17 +81,17 @@ class TProductsCardVertical extends StatelessWidget {
             ),
 
             ///Details
-            const Column(
+             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 TProductTitleText(
-                  title: 'Green Nike Air Shoes',
+                  title: product.name,
                   smallSize: true,
                 ),
                 SizedBox(
                   height: TSizes.spaceBtwItems / 2,
                 ),
-                TBrandTitleTextWithVerifiedIcon(title: 'Nike'),
+                TBrandTitleTextWithVerifiedIcon(title: "demo"),
               ],
             ),
             const Spacer(),
@@ -123,5 +126,3 @@ class TProductsCardVertical extends StatelessWidget {
     );
   }
 }
-
-
